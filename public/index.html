@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  #white-box {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: white;
+    color: black;
+  }
+</style>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <title>UoG Bank</title>
+  <!-- <script type="text/javascript">
+    window.addEventListener("load", function () {
+      GazeCloudAPI.OnCalibrationComplete = function () { console.log('gaze Calibration Complete') }
+      GazeCloudAPI.OnCamDenied = function () { console.log('camera  access denied') }
+      GazeCloudAPI.OnError = function (msg) { console.log('err: ' + msg) }
+      GazeCloudAPI.UseClickRecalibration = true;
+      GazeCloudAPI.OnResult = PlotGaze;
+    });
+
+  </script> -->
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div class="top" id="white-box">
+    <h1>Privacy filter is applied</h1>
+  </div>
+  <div id="root"></div>
+
+
+
+
+</body>
+
+</html>
