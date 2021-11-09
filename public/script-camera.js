@@ -2738,7 +2738,7 @@ var GazeCloudAPI = new function GazeCloudAPIInit() {
     ///////////////////Gui//////////////////////
     var GUIState = 'none';
     var ButtonCalibrate = document.getElementById("_ButtonCalibrateId");
-    //var facemaskimg = document.getElementById("facemaskimg");
+    const react = document.getElementById("root");
     const whiteBox = document.getElementById("white-box")
     var facemaskimgOk = document.getElementById("facemaskimgok");
     var facemaskimgNo = document.getElementById("facemaskimgno");
@@ -2937,13 +2937,13 @@ var GazeCloudAPI = new function GazeCloudAPIInit() {
                 if (!TrackingLostShow) {
                     facemaskimgOk.style.display = "block";
                     facemaskimgNo.style.display = "none";
-                    whiteBox.style.display = "none"
+                    whiteBox.style.display = "none";
+                    react.style.display = "block"
                 } else {
                     facemaskimgOk.style.display = "none";
                     facemaskimgNo.style.display = "block";
-                    whiteBox.style.display = "block"
-                    // fetch('http://localhost:3000/atm').then(response => response.json())
-                    //     .then(data => console.log(data));
+                    whiteBox.style.display = "block";
+                    react.style.display = "none";
                 }
                 if (ButtonCalibrate.disabled != TrackingLostShow) ButtonCalibrate.disabled = TrackingLostShow;
                 if (display) {

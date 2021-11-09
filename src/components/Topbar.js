@@ -9,14 +9,14 @@ const Topbar = () => {
 	// const handleLogin = () => history.push('/login')
 
 	return (
-		<Navbar className="navbar navbar-light" style={{background: "#e3f2fd"}}>
+		<Navbar className="navbar navbar-color" >
 			{/* e3f2fd */}
 			<Container>
 				<Navbar.Brand href="/">UoG Bank</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Nav className="w-100 d-flex justify-content-end">
-						<Button variant="primary" type="button" onClick={handleAccount}>Account</Button>
+						<Button class="btn" type="button" onClick={handleAccount}>Account</Button>
 					</Nav>
 				</Navbar.Collapse>
 			</Container>

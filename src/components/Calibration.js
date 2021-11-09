@@ -23,11 +23,15 @@ export const Calibration = ({ GazeCloudAPI }) => {
 		<div>
 			<div className="center pt-5">
 				<h2 className="h1-home"> Login successful! </h2>
-				<h4> Before you access your account details, please start the calibration process</h4>
 				<br></br>
-				<br></br>
+				<h4>
+					Please follow the calibration process.
+					<br></br> 
+					On the completion, you will be redirected to your account.
+				</h4>
+				<br></br> 
 
-				<Button className="col-3" type="button" onClick={() => GazeCloudAPI.StartEyeTracking()}>Start</Button>
+				<Button className="col-3" type="button" onClick={() => GazeCloudAPI.StartEyeTracking()}>Start Calibration</Button>
 				{/* <Button className="col-3" type="button" onClick={() => GazeCloudAPI.StopEyeTracking()}>Stop</Button> */}
 			</div>
 			<div id="gaze"

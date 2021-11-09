@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import App from './App';
 import Topbar from './components/Topbar';
+import Footer from './components/Footer'
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
@@ -16,6 +17,7 @@ ReactDOM.render(
     <Router>
       <Topbar />
       <App />
+      <Footer />
     </Router>
   </React.StrictMode>,
   document.getElementById('root')

@@ -39,7 +39,7 @@ export const Login = () => {
 					<Form.Control type="password" placeholder="Enter Password" onChange={(e) => setPassword(e.target.value)} />
 				</Form.Group>
 
-				<Button className=" d-flex justify-content-between align-items-center" variant="primary" type="submit">
+				<Button className=" btn d-flex justify-content-between align-items-center" type="submit">
 					Submit
 					{
 						loading && <Spinner style={{ marginLeft: 16 }} animation="border" role="status" size="sm">
